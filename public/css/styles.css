@@ -397,6 +397,28 @@ box-shadow: 0 4px 15px rgba(47, 63, 87, 0.75);
   justify-content: center;
 }
 
+.github a {
+  margin-left: 5px;
+  font-family: 'Quicksand', sans-serif;
+  color: #1a1a1a !important;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.github a:hover {
+  color: #2F3F57 !important; /* Hover kleur */
+  outline: none;
+  transform: scale(1.1); /* Slight increase in size on hover for visibility */
+}
+
+.centre {
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Heading */
 .header {
   clear: both;
