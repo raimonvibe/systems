@@ -15,14 +15,9 @@ interface NavLink {
 const NavbarHome: React.FC = () => {
   const navLinks: NavLink[] = [
     { href: "/", label: "Home" },
-    { href: "https://raimonvibe.pythonanywhere.com/", label: "BookHub" },
-    { href: "https://raimon.pythonanywhere.com/", label: "SkillsHub" },
-    { href: "https://saas-code-review.onrender.com/", label: "Code Review" },
-    // { href: "/Clients", label: "Clients" },
-    // { href: "/ThreeDLibrary", label: "ThreeDLibrary" },
-    // { href: "/Certificates", label: "Certificates" },
-    // { href: "Resume", label: "My Resume", target: "_blank" },
-    // { href: "/Contact", label: "Contact" },
+    { href: "https://raimonvibe.pythonanywhere.com/", label: "BookHub", target: "_blank" },
+    { href: "https://raimon.pythonanywhere.com/", label: "SkillsHub", target: "_blank" },
+    { href: "https://saas-code-review.onrender.com/", label: "Code Review", target: "_blank" },
   ];
 
   return (
@@ -44,3 +39,5 @@ const NavbarHome: React.FC = () => {
 };
 
 export default NavbarHome;
+
+
