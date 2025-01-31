@@ -47,8 +47,6 @@ export default function Home() {
             <p className="github">
             This project is a web application focused on managing and displaying information about books. 
             It's a good example of my interest in full-stack development and working with data. 
-            The code lives on 
-            <a  href="https://github.com/raimonvibe/fullstack_books" target="_blank" rel="noopener noreferrer">GitHub</a>.
           </p>
           </div>
         </article>
