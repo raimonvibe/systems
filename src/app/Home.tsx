@@ -1,85 +1,112 @@
 import React from "react";
 import Image from "next/image";
-import breathe from "../../public/images/breathe.webp";
-import welcome from "../../public/images/welcome.webp";
-
-const Home: React.FC = () => {
+import systems from "../../public/images/systems.webp";
+import books from "/public/images/books.webp";
+import review from "/public/images/review.webp";
+import stack from "/public/images/stack.webp";
+ 
+      export default function Home() {
   return (
     <div>
-      <main>
-        <div className="spacing"></div>
-        <div className="video-container">
-          <div className="video-responsive">
-            <iframe
-              src="https://www.youtube.com/embed/PhokNIST824"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="YouTube video 1"
-            ></iframe>
+       <main>
+        <div className="header"></div>
+
+        <Image
+          className="common-properties common-properties-left"
+          src={systems}
+          alt="A peaceful office with a person working on a laptop, surrounded by abstract system diagrams and a soft, neutral color scheme."
+          priority
+        />
+        <article>
+          <div>
+            <h1>About Systems</h1>
+            <p>
+              Hey there! Welcome to my digital playground. This page is kind of a hub for some of the projects I've been tinkering with. I'm really into systems, coding, and all that good stuff, so this is where I let those interests run wild. Think of it as a glimpse into my brain – a slightly organized glimpse, anyway.
+            </p>
+            <p>
+              You'll find a few different things here, each with its own story. It's all a work in progress, just like me!
+            </p>
           </div>
-        </div>
+        </article>
+
         <div className="spacing"></div>
 
-        <div className="header">
+      <div className="middle-container">
+        <Image
+          className="common-properties common-properties-right"
+          src={books}
+          alt="A minimalist workspace where a developer manages a book catalog on a web application, with bookshelves and digital elements."
+        />
+        <article>
+          <div>
+            <h1>Fullstack Books</h1>
+            <p className="github">
+            This project is a web application focused on managing and displaying information about books. 
+            It's a good example of my interest in full-stack development and working with data. 
+            The code lives on 
+            <a  href="https://github.com/raimonvibe/fullstack_books" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          </p>
+          </div>
+        </article>
+      </div>
+
+      <div className="spacing"></div>
+
+      <div className="middle-container">
           <Image
             className="common-properties common-properties-left"
-            src={welcome}
-            alt="Illustration of technology"
-            width={500}
-            height={300}
+            src={stack}
+            alt="A serene setup featuring a developer exploring technology stacks, with layered icons representing frameworks and databases."
           />
           <article>
             <div>
-              <h1>About raimonvibe</h1>
-              <p>
-              About three years ago, I founded raimonvibe, a research company in the technology field, to dive deep into programming and push the boundaries of digital innovation. I've explored a wide range of technologies, working with languages like Python, JavaScript, HTML and CSS, and Flutter Dart. Studying both frontend and backend solutions has been fascinating, aiming for seamless and efficient integration. Utilizing powerful frameworks like React, Django, and Node.js, along with database systems such as MongoDB and Mongoose, I've been able to create robust applications.
-              </p>
-              <p>
-              Delving into Data Science and Data Visualization has allowed me to transform complex datasets into clear, insightful visual reports. Learning to program AI with TensorFlow has opened up new possibilities to develop concepts for customized AI solutions that support intelligent, data-driven decision-making. It's amazing how these experiences not only advance my professional skills but also enhance my problem-solving abilities in everyday life. Sometimes discipline is more present on some days than others, and that's okay.
+              <h1>Recommended Stack</h1>
+              <p className="github">
+                This project is all about exploring and recommending different technology stacks for web development. 
+                It's a resource I'm building to help developers find the right tools for their projects. 
+                You can find the code on <a href="https://github.com/raimonvibe/Recommended-Stack" target="_blank" rel="noopener noreferrer">GitHub</a>.
               </p>
             </div>
           </article>
         </div>
-        <div className="spacing"></div>
-        <div className="video-container">
-          <div className="video-responsive">
-            <iframe
-              src="https://www.youtube.com/embed/bSq3YELK5ww"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="YouTube video 2"
-            ></iframe>
-          </div>
-        </div>
+
         <div className="spacing"></div>
 
         <div className="middle-container">
           <Image
             className="common-properties common-properties-right"
-            src={breathe}
-            alt="Illustration of a living room"
-            width={500}
-            height={300}
+            src={review}
+            alt="A calm workspace with a developer reviewing code on a laptop, surrounded by soft tones and subtle tech elements."
           />
           <article>
+            <h1>SaaS Code Review</h1>
             <div>
-              <h1>Technological Impact</h1>
-              <p>
-              At raimonvibe, I'm not just focused on developing technology but also on understanding and innovating it. I've extended my research initiatives to include modern server technologies like VPS (Virtual Private Servers) to host robust, scalable applications that are accessible worldwide. My skills with jQuery and deploying real-time web applications with Express have enabled me to build responsive and interactive websites that enhance the user experience.
-              </p>
-              <p>
-              I take pride in my approach to continuous improvement and learning, where each project is an opportunity to deepen my skills and explore new technologies. My goal is always to be at the forefront of technological advancement and to share my findings and developments with the broader community, thus contributing to the evolution of the technology industry.              </p>
+            <p className="github">
+            SaaS Code Review: This is a tool I'm building to help developers analyze and improve the quality of their code, 
+            especially for SaaS applications. It's all about catching potential problems early on so you can build more robust 
+            and reliable software. You can check out the code on 
+            <a className="github" href="https://github.com/raimonvibe/saas_code_review" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          </p>
             </div>
           </article>
         </div>
+
+        <div className="spacing"></div>
+
+        <article>
+            <div>
+              <h1 className="centre">So, have a look around!</h1>
+              <p className="centre">
+                Feel free to explore these projects and see what you think. I'm always learning and growing, and these sites are a reflection of that journey. Who knows what I'll be working on next? Stay tuned!
+              </p>
+            </div>
+          </article>
+    
+
         <div className="spacing"></div>
       </main>
 
       <div className="spacing"></div>
     </div>
   );
-};
-
-export default Home;
+}
