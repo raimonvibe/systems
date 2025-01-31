@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-home.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-about.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-services.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-store.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-contact.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-resume.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-certificates.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-clients.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-opportunities.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://raimonvibe.com/sitemap-threedlibrary.xml</loc>
+   </sitemap>
+</sitemapindex>

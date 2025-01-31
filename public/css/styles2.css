@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/josefin-slab-v19-latin-regular.eot');
+  src: local(''), url('../fonts/josefin-slab-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/josefin-slab-v19-latin-regular.woff2') format('woff2'),
+       url('../fonts/josefin-slab-v19-latin-regular.woff') format('woff'),
+       url('../fonts/josefin-slab-v19-latin-regular.ttf') format('truetype'),
+       url('../fonts/josefin-slab-v19-latin-regular.svg#JosefinSlab') format('svg');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v29-latin-regular.eot');
+  src: local(''), url('../fonts/quicksand-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/quicksand-v29-latin-regular.woff2') format('woff2'),
+       url('../fonts/quicksand-v29-latin-regular.woff') format('woff'),
+       url('../fonts/quicksand-v29-latin-regular.ttf') format('truetype'),
+       url('../fonts/quicksand-v29-latin-regular.svg#Quicksand') format('svg');
+}
+
+@keyframes GradientAnimation {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+  width: 100%;
+}
+
+.container-fluid {
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(-45deg, #3E7FA9, #ADD8E6, #3E7FA9, #ADD8E6);
+  background-size: 400% 400%;
+  animation: GradientAnimation 20s ease infinite;
+  color: #fff;
+}
+
+.footer-link, .footer-link2, .footer-link3, .Social, #myBtn, a {
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.footer-link:hover, .footer-link2:hover, .footer-link3:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.Social, #myBtn {
+  background: #3E7FA9;
+  cursor: pointer;
+  border: 2px solid #EEE3CB;
+  border-radius: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+.Social:hover, #myBtn:hover {
+  background: #967E76;
+  color: #ffffff;
+  outline: none;
+  border-color: #EEE3CB;
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px rgba(49, 196, 190, 0.75);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1600px) {
+  .container-fluid { padding: 60px; }
+}
+
+@media only screen and (max-width: 768px) {
+  .hList {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hList li a { font-size: 1.2rem; padding: 20px 10px; }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar { flex-direction: column; align-items: flex-start; }
+  .hList li { margin-bottom: 20px; }
+  .logo, .common-properties, .common-properties2, .certificate-right, .certificate-left, .models-right, .models-left {
+    float: none;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .header, .middle-container, .middle-container2, .footer { max-width: 100%; }
+  .Social, #myBtn { margin-left: 0; position: relative; }
+}
+
+/* Simplified repetitive styles and consolidated media queries for efficiency */

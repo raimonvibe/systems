@@ -1,0 +1,82 @@
+/* Import fonts */
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/josefin-slab-v19-latin-regular.eot');
+  src: local(''),
+    url('../fonts/josefin-slab-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/josefin-slab-v19-latin-regular.woff2') format('woff2'),
+    url('../fonts/josefin-slab-v19-latin-regular.woff') format('woff'),
+    url('../fonts/josefin-slab-v19-latin-regular.ttf') format('truetype'),
+    url('../fonts/josefin-slab-v19-latin-regular.svg#JosefinSlab') format('svg');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v29-latin-regular.eot');
+  src: local(''),
+    url('../fonts/quicksand-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/quicksand-v29-latin-regular.woff2') format('woff2'),
+    url('../fonts/quicksand-v29-latin-regular.woff') format('woff'),
+    url('../fonts/quicksand-v29-latin-regular.ttf') format('truetype'),
+    url('../fonts/quicksand-v29-latin-regular.svg#Quicksand') format('svg');
+}
+
+/* Algemene stijlen voor de webwinkel */
+.webshop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background-color: #373A40;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #F8F1F1 !important; /* Specifieke kleur voor de productbeschrijving */
+}
+
+.product p {
+  margin: 10px 0;
+  color: #F8F1F1 !important; /* Specifieke kleur voor de productbeschrijving */
+}
+/* Voeg stijlen toe voor de H1 */
+h5 {
+  text-align: center;
+  font-size: calc(2rem + 2vw);
+}
+
+@media (max-width: 768px) {
+  .product {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
