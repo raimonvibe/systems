@@ -82,8 +82,7 @@ export default function Home() {
             <div>
             <p className="github">
             This is a tool I'm building to help developers analyze and improve the quality of their code. It's all about catching potential problems early on so you can build more robust 
-            and reliable software. You can check out the code on 
-            <a className="github" href="https://github.com/raimonvibe/saas_code_review" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            and reliable software.  
           </p>
             </div>
           </article>
