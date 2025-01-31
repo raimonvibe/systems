@@ -3,6 +3,7 @@ import systems from "/public/images/systems.webp";
 import books from "/public/images/books.webp";
 import review from "/public/images/review.webp";
 import stack from "/public/images/stack.webp";
+import welcome from "/public/images/welcome.webp";
 
 export default function Home() {
   return (
@@ -93,7 +94,11 @@ export default function Home() {
 
 
         <div className="middle-container">
- 
+          <Image
+            className="common-properties common-properties-left"
+            src={welcome}
+            alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming atmosphere."
+          /> 
         <article>
             <div>
               <h1 className="centre">So, have a look around!</h1>
