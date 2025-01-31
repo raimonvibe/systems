@@ -95,6 +95,9 @@ export default function Home() {
 
         <div className="spacing"></div>
 
+
+        <div className="middle-container">
+ 
         <article>
             <div>
               <h1 className="centre">So, have a look around!</h1>
@@ -103,6 +106,7 @@ export default function Home() {
               </p>
             </div>
           </article>
+          </div>
     
 
         <div className="spacing"></div>
