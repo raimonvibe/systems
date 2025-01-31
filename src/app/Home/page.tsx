@@ -1,12 +1,15 @@
-import React from "react";
 import Image from "next/image";
-import systems from "../../public/images/systems.webp";
+import systems from "/public/images/systems.webp";
 import books from "/public/images/books.webp";
 import review from "/public/images/review.webp";
 import stack from "/public/images/stack.webp";
 import welcome from "/public/images/welcome.webp";
 
-      export default function Home() {
+export const metadata = {
+  title: 'Home | Raimonvibe',
+  description: 'Welcome to Raimonvibe - Pushing the boundaries of digital innovation',
+};
+export default function Home() {
   return (
     <div>
        <main>
@@ -110,6 +113,7 @@ import welcome from "/public/images/welcome.webp";
             </div>
           </article>
           </div>
+
     
 
         <div className="spacing"></div>
