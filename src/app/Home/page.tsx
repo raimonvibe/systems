@@ -68,7 +68,6 @@ export default function Home() {
               <p className="github">
                 This project is all about exploring and recommending different technology stacks for web development. 
                 It's a resource I'm building to help developers find the right tools for their projects. 
-                You can find the code on <a href="https://github.com/raimonvibe/Recommended-Stack" target="_blank" rel="noopener noreferrer">GitHub</a>.
               </p>
             </div>
           </article>
