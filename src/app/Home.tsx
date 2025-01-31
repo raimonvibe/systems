@@ -92,6 +92,9 @@ import stack from "/public/images/stack.webp";
 
         <div className="spacing"></div>
 
+
+        <div className="middle-container">
+ 
         <article>
             <div>
               <h1 className="centre">So, have a look around!</h1>
@@ -100,6 +103,7 @@ import stack from "/public/images/stack.webp";
               </p>
             </div>
           </article>
+          </div>
     
 
         <div className="spacing"></div>
