@@ -23,7 +23,7 @@ export default function RootLayout({
         <Script type="text/javascript" charSet="UTF-8" src="//cdn.cookie-script.com/s/bc6138fbc116438ba4c0b26d11e59b5f.js" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="icon" href="/favicon-new.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://raimonvibe.com/" />
         <link rel="alternate" hrefLang="en" href="https://raimonvibe.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
