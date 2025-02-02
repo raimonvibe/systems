@@ -35,7 +35,7 @@ export default function Home() {
 
         <div className="spacing"></div>
 
-      <div className="middle-container">
+{/*       <div className="middle-container">
         <Image
           className="common-properties common-properties-right"
           src={books}
@@ -50,13 +50,13 @@ export default function Home() {
           </p>
           </div>
         </article>
-      </div>
+      </div> */}
 
       <div className="spacing"></div>
 
       <div className="middle-container">
           <Image
-            className="common-properties common-properties-left"
+            className="common-properties common-properties-right"
             src={stack}
             alt="A serene setup featuring a developer exploring technology stacks, with layered icons representing frameworks and databases."
           />
@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="middle-container">
           <Image
-            className="common-properties common-properties-right"
+            className="common-properties common-properties-left"
             src={review}
             alt="A calm workspace with a developer reviewing code on a laptop, surrounded by soft tones and subtle tech elements."
           />
@@ -96,7 +96,7 @@ export default function Home() {
  
         <div className="middle-container">
           <Image
-            className="common-properties common-properties-left"
+            className="common-properties common-properties-right"
             src={welcome}
             alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming atmosphere."
           /> 
