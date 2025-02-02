@@ -1,6 +1,6 @@
 import Image from "next/image";
 import systems from "/public/images/systems.webp";
-import books from "/public/images/books.webp";
+// import books from "/public/images/books.webp";
 import review from "/public/images/review.webp";
 import stack from "/public/images/stack.webp";
 import welcome from "/public/images/welcome.webp";
