@@ -4,6 +4,7 @@ import systems from "/public/images/systems.webp";
 import review from "/public/images/review.webp";
 import stack from "/public/images/stack.webp";
 import welcome from "/public/images/welcome.webp";
+import physics from "/public/images/physics.webp";
 
 export default function Home() {
   return (
@@ -88,10 +89,25 @@ export default function Home() {
 
         <div className="spacing"></div>
 
-
         <div className="middle-container">
           <Image
             className="common-properties common-properties-right"
+            src={physics}
+            alt="A calm, minimal workspace with soft lighting, beige tones, and a sleek desk featuring a blank-screen computer, surrounded by warm decor and physics-inspired wall designs."
+          />
+          <article>
+            <h1>Velocity Calculator</h1>
+            <div>
+            <p className="github">
+            I recently worked on a project called the Velocity Calculator, designed to make calculating velocity, acceleration, and time as simple as possible. With unit flexibility and a clean interface, it saves time by handling conversions automatically.  
+          </p>
+            </div>
+          </article>
+        </div>
+
+        <div className="middle-container">
+          <Image
+            className="common-properties common-properties-left"
             src={welcome}
             alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming atmosphere."
           /> 
