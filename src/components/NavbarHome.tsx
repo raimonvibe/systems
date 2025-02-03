@@ -18,6 +18,8 @@ const NavbarHome: React.FC = () => {
     // { href: "https://raimonvibe.pythonanywhere.com/", label: "BookHub", target: "_blank" },
     { href: "https://raimon.pythonanywhere.com/", label: "SkillsHub", target: "_blank" },
     { href: "https://code-review.raimonvibe.com/", label: "Code Review", target: "_blank" },
+    { href: "https://raimonvibe.github.io/Velocity-Calculator/", label: "Velocity Calculator", target: "_blank" },
+    
   ];
 
   return (
