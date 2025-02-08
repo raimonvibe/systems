@@ -114,7 +114,7 @@ export default function Home() {
        />
             <article>
             <div>
-              <h1 className="centre">Physics Formulas Flashcards</h1>
+              <h1>Physics Formulas Flashcards</h1>
               <p className="github">
               In this project, Physics Formulas Cheat Sheet, I’ve created a handy reference guide packed with essential physics formulas that are useful for students, engineers, and anyone interested in physics. The formulas are neatly categorized and presented using LaTeX, making them clear and easy to use for solving a variety of physics problems.
               </p>
