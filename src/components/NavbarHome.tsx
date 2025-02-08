@@ -19,7 +19,7 @@ const NavbarHome: React.FC = () => {
     { href: "https://skills-hub.raimonvibe.com/", label: "SkillsHub", target: "_blank" },
     { href: "https://code-review.raimonvibe.com/", label: "Code Review", target: "_blank" },
     { href: "https://www.physics-calculator.raimonvibe.com/", label: "Velocity Calculator", target: "_blank" },
-    
+    { href: "https://www.physics-flashcards.raimonvibe.com/", label: "Physics Flascards", target: "_blank" }, 
   ];
 
   return (
