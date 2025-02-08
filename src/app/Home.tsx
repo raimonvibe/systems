@@ -6,6 +6,8 @@ import review from "/public/images/review.webp";
 import stack from "/public/images/stack.webp";
 import welcome from "/public/images/welcome.webp";
 import physics from "/public/images/physics.webp";
+import flashy from "/public/images/flashy.webp";
+
 
       export default function Home() {
   return (
@@ -109,6 +111,22 @@ import physics from "/public/images/physics.webp";
         <div className="middle-container">
           <Image
             className="common-properties common-properties-left"
+            src={flashy}
+            alt="A calm, minimalistic workspace with soft beige tones, showcasing physics-themed diagrams, organized shelves, and a clean desk with a computer displaying formulas."
+       />
+            <article>
+            <div>
+              <h1 >Physics Formulas Flashcards</h1>
+              <p className="github">
+              In this project, Physics Formulas Cheat Sheet, I’ve created a handy reference guide packed with essential physics formulas that are useful for students, engineers, and anyone interested in physics. The formulas are neatly categorized and presented using LaTeX, making them clear and easy to use for solving a variety of physics problems.
+              </p>
+            </div>
+          </article>
+          </div>
+
+        <div className="middle-container">
+          <Image
+            className="common-properties common-properties-right"
             src={welcome}
             alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming atmosphere."
           /> 
