@@ -130,8 +130,8 @@ export default function Home() {
           /> 
         <article>
             <div>
-              <h1 className="centre" >So, have a look around!</h1>
-              <p className="centre">
+              <h1>So, have a look around!</h1>
+              <p className="github">
                 Feel free to explore these projects and see what you think. I'm always learning and growing, and these sites are a reflection of that journey. Who knows what I'll be working on next? Stay tuned!
               </p>
             </div>
