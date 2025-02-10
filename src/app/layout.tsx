@@ -24,20 +24,20 @@ export default function RootLayout({
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://raimonvibe.com/" />
-        <link rel="alternate" hrefLang="en" href="https://raimonvibe.com" />
+        <link rel="canonical" href="https://systems.raimonvibe.com/" />
+        <link rel="alternate" hrefLang="en" href="https://systems.raimonvibe.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Discover custom-made digital artworks with Raimon, your freelance web designer and developer from West Friesland. Specialist in responsive design and master of HTML, CSS, and JavaScript. Experience a seamless digital experience, optimized for every screen - from the palm of your hand to the wide view of your desktop."
+          content="Welcome to my digital playground. This page is kind of a hub for some of the projects I've been tinkering with. I'm really into systems, coding, and all that good stuff, so this is where I let those interests run wild. Think of it as a glimpse into my brain – a slightly organized glimpse, anyway."
         />
         <meta
           name="keywords"
-          content="freelance web designer, web developer, responsive web design, HTML, CSS, JavaScript, digital art, Raimon, custom websites, Netherlands, West Friesland"
+          content="web systems, open-source projects, SaaS tools, recommended tech stacks, velocity calculator, software development, system architecture, Raimon, GitHub systems, code review tools, developer resources, tech tutorials"
         />
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Home - raimonvibe" />
-        <meta property="og:description" content="Technical Researcher" />
+        <meta property="og:title" content="Home - systems" />
+        <meta property="og:description" content="Systems raimonvibe" />
         <meta
           property="og:image"
           content="https://raimonvibe.com/static/media/raimon100.37739e52106e6e1f1b12.webp"
