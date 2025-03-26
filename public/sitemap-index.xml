@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Updated sitemap references for Raimon Vibe projects -->
+  <sitemap>
+    <loc>https://retro-monitor.raimonvibe.com/sitemap-typewriter.xml</loc>
+    <lastmod>2025-03-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.physics-calculator.raimonvibe.com/sitemap-physics-calculator.xml</loc>
+    <lastmod>2025-02-04</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.physics-flashcards.raimonvibe.com/sitemap-physics-flashcards.xml</loc>
+    <lastmod>2025-02-04</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://code-review.raimonvibe.com/sitemap-code-review.xml</loc>
+    <lastmod>2025-02-05</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://skills-hub.raimonvibe.com/static/sitemap-skills-hub.xml</loc>
+    <lastmod>2025-02-07</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://systems.raimonvibe.com/sitemap-legal-notice.xml</loc>
+    <lastmod>2025-02-07</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://systems.raimonvibe.com/sitemap-privacy-notice.xml</loc>
+    <lastmod>2025-02-07</lastmod>
+  </sitemap>
+</sitemapindex>
