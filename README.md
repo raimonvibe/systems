@@ -1,4 +1,4 @@
-# ![Systems](systems.png)
+# ![Systems](IMG_4771.webp)
 
 # Systems Repository 🚀
 
