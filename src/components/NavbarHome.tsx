@@ -24,7 +24,7 @@ const NavbarHome: React.FC = () => {
     { href: "https://animalguesses.raimonvibe.com/", label: "Animal Guesses", target: "_blank" }, 
     { href: "https://www.emf-simulator.raimonvibe.com/", label: "EMF-Simulator", target: "_blank" },
     { href: "https://tetris2.0.raimonvibe.com/", label: "Tetris 2.0", target: "_blank" }, 
- 
+    { href: "https://periodic-table.raimonvibe.com/", label: "Periodic Table", target: "_blank" }, 
   ];
 
   return (
