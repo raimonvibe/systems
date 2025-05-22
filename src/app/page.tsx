@@ -195,10 +195,27 @@ export default function Home() {
       </article>
     </div>
 
+        <div className="middle-container">
+        <Image
+          className="common-properties common-properties-right"
+          src={periodic}
+          alt="An interactive periodic table rendered in warm, minimal tones. Elements are color-coded and neatly arranged, radiating a sense of calm structure and scientific beauty."
+        />
+        <article>
+          <div>
+            <h1>The Periodic Table.</h1>
+            <p className="github">
+              Not just rows and columns — it’s a quiet map of everything. Each element has a story: iron in our blood, carbon in our breath, gold in our dreams. This project gives shape to that wonder. You click, you learn, and slowly, you start to see the order in the chaos. It’s about connection. And how everything — even us — fits in.
+            </p>
+          </div>
+        </article>
+      </div>
+
+
 
         <div className="middle-container">
           <Image
-            className="common-properties common-properties-right"
+            className="common-properties common-properties-left"
             src={welcome}
             alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming atmosphere."
           /> 
