@@ -10,6 +10,7 @@ import typewriter from "/public/images/typewriter.webp";
 import animal from "/public/images/animal.webp";
 import emf from "/public/images/emf.webp";
 import tetris from "/public/images/tetris.webp";
+import periodic from "/public/images/periodic.webp";
 
 
 
