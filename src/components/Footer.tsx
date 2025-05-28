@@ -60,25 +60,27 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="container-fluid">
-      {socialLinks.map((link, index) => (
-        <React.Fragment key={link.href}>
-          {index % 2 === 0 && index !== 0 && <div className="spacing4" />}
-          <Link
-            href={link.href}
-            className={`footer-link ${link.className || ''}`}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={link.label}
-          >
-            <FontAwesomeIcon icon={link.icon} size="1x" />
-          </Link>
-        </React.Fragment>
-      ))}
+    <footer className="o-container--fluid">
+      <div className="c-footer-icons">
+        {socialLinks.map((link, index) => (
+          <React.Fragment key={link.href}>
+            {index % 2 === 0 && index !== 0 && <div className="spacing4" />}
+            <Link
+              href={link.href}
+              className={`c-social-icon ${link.className ? link.className.replace('footer-link', 'c-footer-link') : ''}`}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={link.label}
+            >
+              <FontAwesomeIcon icon={link.icon} size="1x" />
+            </Link>
+          </React.Fragment>
+        ))}
+      </div>
       <div className="spacing4" />
       <Link
         href="/PrivacyNotice"
-        className="footer-link footer-link2"
+        className="c-footer-link c-footer-link--offset-right"
         aria-label="Link to Privacy Policy"
       >
         Privacy Notice
@@ -86,15 +88,15 @@ const Footer: React.FC = () => {
       <div className="spacing4" />
       <Link
         href="/LegalNotice"
-        className="footer-link footer-link2"
+        className="c-footer-link c-footer-link--offset-left"
         aria-label="Link to Legal Notice"
       >
         Legal Notice
       </Link>
-      <p className="footer-link">
+      <p className="c-copyright">
         <Link
           href="https://www.raimonvibe.com/"
-          className="footer-link"
+          className="c-footer-link"
           target="_blank"
           rel="noreferrer"
           aria-label="Link to Raimonvibe Homepage"
@@ -102,7 +104,7 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} raimonvibe
         </Link>
       </p>
-      <button id="myBtn" title="Go to top">
+      <button id="myBtn" className="c-btn c-btn--back-to-top" title="Go to top" aria-label="Scroll back to top of page">
         Back to Top
       </button>
     </footer>
