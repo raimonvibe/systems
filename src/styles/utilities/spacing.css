@@ -1,0 +1,115 @@
+/* Spacing utilities */
+.spacing { 
+  height: var(--spacing-sm); 
+}
+
+.spacing2 { 
+  height: var(--spacing-xl); 
+}
+
+.spacing3 { 
+  height: var(--spacing-lg); 
+}
+
+.spacing4 { 
+  height: var(--spacing-xs); 
+}
+
+/* OOCSS spacing utilities */
+.u-spacing {
+  height: var(--spacing-sm);
+}
+
+.u-spacing-md {
+  height: var(--spacing-md);
+}
+
+.u-buy-spacing {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Margin utilities */
+.u-margin-sm { 
+  margin: var(--spacing-sm); 
+}
+
+.u-margin-md { 
+  margin: var(--spacing-md); 
+}
+
+.u-margin-top-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Padding utilities */
+.u-padding-sm { 
+  padding: var(--spacing-sm); 
+}
+
+.u-padding-md { 
+  padding: var(--spacing-md); 
+}
+
+/* Text alignment */
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.u-align {
+  display: inline-block;
+  margin: var(--spacing-sm) 0;
+}
+
+/* OOCSS text alignment utilities */
+.u-left-align {
+  text-align: left;
+}
+
+.u-center-align {
+  text-align: center;
+}
+
+.u-right-align {
+  text-align: right;
+}
+
+/* Exclusive content utilities */
+.u-exclusive-text {
+  display: inline-block;
+}
+
+.u-sellfy-text {
+  display: inline-block;
+}
+
+/* Additional spacing utilities */
+.u-spacing-top-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.u-spacing-bottom-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.u-spacing-left-sm {
+  margin-left: var(--spacing-sm);
+}
+
+.u-spacing-right-sm {
+  margin-right: var(--spacing-sm);
+}
+
+/* Clearfix utility */
+.u-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

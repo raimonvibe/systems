@@ -1,0 +1,107 @@
+/* Responsive breakpoints */
+
+/* Mobile first approach */
+@media (min-width: 480px) {
+  /* Small tablets */
+  .o-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablets */
+  .o-container {
+    width: 85%;
+  }
+  
+  .c-footer-link, .c-copyright {
+    font-size: 40px;
+    margin: 10px 20px;
+  }
+  
+  /* Navigation list styles moved to components/navbar.css */
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* iPad Pro */
+  .o-container {
+    width: 85%;
+  }
+  
+  .logo {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 1367px) {
+  /* Desktop */
+  .o-container {
+    width: 80%;
+  }
+  
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  /* Large desktop */
+  .container-fluid {
+    padding: 60px;
+    margin-top: 60px;
+  }
+}
+
+/* Mobile specific */
+@media (max-width: 480px) {
+  .product {
+    flex: 1 1 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Image styles moved to objects/images/standardized-images.css */
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet specific */
+@media (max-width: 768px) {
+  .product {
+    flex: 1 1 calc(50% - 20px);
+  }
+  
+  /* Removed conflicting styles for header, middle-container, and common-properties
+     These are now handled in layout.css with comprehensive OOCSS coverage */
+  
+  .opportunity-icon {
+    font-size: 20px;
+  }
+  
+  .faqs-left,
+  .faqs-right {
+    max-width: 90%;
+  }
+  
+  /* Navigation list styles moved to components/navbar.css */
+}
+
+/* Tablet and mobile */
+@media (max-width: 767px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .hList li {
+    margin: 10px 0;
+  }
+}

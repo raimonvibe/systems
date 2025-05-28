@@ -1,0 +1,94 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-secondary);
+  font-weight: bold;
+  color: var(--color-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body custom styling from globals.css */
+.body-custom {
+  background-color: var(--color-background);
+  background-image: var(--gradient-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
+
+p {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover, a:focus {
+  color: var(--color-primary);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Selection styling */
+*::selection {
+  background: rgba(0, 0, 0, 0.01);
+  color: var(--color-primary);
+}
+
+*::-moz-selection {
+  background: rgba(0, 0, 0, 0.01);
+  color: var(--color-primary);
+}
+
+*::-webkit-selection {
+  background: rgba(0, 0, 0, 0.01);
+  color: var(--color-primary);
+}
+
+/* Clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

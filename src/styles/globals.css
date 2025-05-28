@@ -1,0 +1,476 @@
+/* Font declarations moved to base/fonts.css */
+/* Animation keyframes moved to base/animations/animations.css */
+  
+  /* styles.css */
+  .body-custom {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-secondary);
+    font-weight: bold;
+    color: var(--color-primary) !important;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  /* body .container-fluid styles moved to utilities/container.css */
+  
+  
+  /* body {
+    background: #373A40 !important; /* Donkergrijze achtergrond met hoge prioriteit
+    color: #F8F1F1 !important; /* Witte tekst met hoge prioriteit
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'%3E%3Cpath d=\'M0,40 Q25,20 50,40 T100,40\' fill=\'none\' stroke=\'rgba(255,255,255,0.1)\' stroke-width=\'2\'/%3E%3C/svg%3E');
+    background-size: 100px 100px;
+    color: var(--color-white);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  /* Footer styles moved to components/footer.css */
+  
+  /* Shop link styles moved to components/typography.css */
+  
+  /* h5 styles moved to components/typography.css */
+  
+  
+  /* Custom link styles moved to components/typography.css */
+  
+  /* Menu button styles moved to components/navbar.css */
+
+  #rb-external-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Layout classes moved to objects/layout.css */
+  /* Image classes moved to objects/images/images.css */
+  
+  /* Video styles moved to components/video.css */
+  
+  
+  /* .spacing utility moved to utilities/spacing.css */
+  
+  /* Navigation list styles moved to components/navbar.css */
+  
+  .opportunity {
+    color: #1a1a1a !important; /* Ensures the purple color is applied */
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    /* display: block; */
+    -webkit-transition: border-color 0.3s, box-shadow 0.3s;
+    -moz-transition: border-color 0.3s, box-shadow 0.3s;
+    -ms-transition: border-color 0.3s, box-shadow 0.3s;
+    -o-transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Default link style for NavbarHome */
+  /* Navigation styles moved to components/navbar.css */
+  
+  
+  @media (max-width: 768px) {
+    .product {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product {
+      flex: 1 1 100%; /* 1 item per row */
+    }
+  }
+  
+  /* Removed conflicting tablet media query for header and middle-container
+   These styles are now handled in layout.css with OOCSS classes */
+  
+  /* Voor tablets (bijvoorbeeld tussen 768px en 1024px) */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    body .container-fluid {
+      padding: 30px;
+      min-height: auto; /* Verwijder min-height voor tablets */
+    }
+  
+    /* Footer styles moved to components/footer.css */
+  }
+  
+  /* Voor mobiele telefoons (bijvoorbeeld tot 767px) */
+  @media (max-width: 767px) {
+    body .container-fluid {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      min-height: auto; /* Verwijder min-height voor mobiele apparaten */
+    }
+  
+    /* Footer styles moved to components/footer.css */
+  }
+  
+  /* HTML scroll behavior moved to base/reset.css */
+  
+/* .left-align utility moved to utilities/alignment.css */
+
+  /* Link styles moved to components/typography.css */
+  
+  /* Navigation link hover styles moved to components/navbar.css */
+  
+  /* Box sizing reset moved to base/reset.css */
+  
+  /* Typography styles moved to components/typography.css */
+  
+  /* Selection styles moved to utilities/selection.css */
+  
+  
+  /* Navigation list styles moved to components/navbar.css */
+  
+  /* Standaard stijlen voor alle schermen */
+  .faqs-left,
+  .faqs-right {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    word-wrap: break-word; /* Dit zal lange woorden afbreken */
+  }
+  
+  
+  .opportunity-icon {
+    font-size: 24px; /* Default size for desktop */
+    color: var(--color-primary) !important; /* Icon color */
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
+    margin-right: 8px; /* Adjust spacing between text and icon */
+  }
+  
+  .opportunity-icon:hover {
+    color: var(--color-text) !important; /* Hover color */
+    transform: scale(1.1); /* Slight increase in size on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .opportunity-icon {
+      font-size: 20px; /* Slightly smaller on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .opportunity-icon {
+      font-size: 18px; /* Smaller on mobile devices */
+    }
+  }
+  
+  /* Media query voor tablets (bijvoorbeeld iPad) */
+  @media screen and (max-width: 768px) {
+    .faqs-left,
+    .faqs-right {
+      max-width: 90%;
+    }
+  }
+  
+  /* Media query voor telefoons (bijvoorbeeld iPhone) */
+  @media screen and (max-width: 480px) {
+    .faqs-left,
+    .faqs-right {
+      max-width: 95%;
+    }
+  }
+  
+  /* Styles for tablets (4 columns) */
+  @media only screen and (max-width: 768px) {
+    .hList {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      /* Remove padding */
+      margin: 0;
+      /* Remove margin */
+    }
+  
+    .hList li a {
+      font-size: 1.2rem;
+      padding: 20px 10px;
+      /* Adjust padding as needed */
+    }
+  }
+  
+  /* Styles for mobile (1 column) */
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Add this line to align items to the left */
+    }
+  
+    .hList {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-items: flex-start; /* Add this line to align items to the left */
+    }
+  
+    .hList li {
+      margin-bottom: 20px;
+      align-items: flex-start; /* Add this line to align items to the left */
+      /* Adjusted margin to increase the vertical spacing */
+    }
+  }
+  
+  /* Styles for smaller screens */
+  @media only screen and (max-width: 480px) {
+    .model-right,
+    .model-left {
+      flex-basis: 100%;
+      margin-right: 0;
+      /* Remove or reduce margin-right */
+      overflow: auto;
+      /* Add scrollbars if content overflows */
+    }
+  
+    .certificate-right2,
+    .certificate-left2 {
+      flex-basis: 100%;
+      margin-right: 0;
+      /* Remove or reduce margin-right */
+      overflow: auto;
+      /* Add scrollbars if content overflows */
+    }
+  }/* Logo styles moved to objects/images/images.css */
+
+/* Responsive adjustments for iPad Air and similar tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Logo styles moved to objects/images/images.css */
+
+  .hList {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center; /* Center the navigation links */
+  }
+
+  .hList li {
+    margin: 15px 0; /* Adjust spacing between links */
+  }
+}
+
+/* Responsive adjustments for larger desktops (1024px and above) */
+@media (min-width: 1024px) {
+  .logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 10px; /* Keep the 30px left margin */
+    margin-top: 10px;
+    float: left; /* Keep the logo on the left */
+  }
+
+  .hList {
+    display: flex;
+    justify-content: center; /* Align links horizontally on larger screens */
+    flex-wrap: wrap; /* Allow wrapping if there are too many links */
+    text-align: center;
+  }
+
+  .hList li {
+    margin: 15px 30px; /* Increase spacing between links */
+  }
+}
+
+/* Responsive adjustments for smaller devices like smartphones (max-width: 767px) */
+@media (max-width: 767px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px; /* Keep the 30px left margin */
+    margin-top: 20px;
+    float: left; /* Keep the logo on the left */
+  }
+
+  .hList {
+    text-align: center; /* Center the navigation links */
+  }
+
+  .hList li {
+    margin: 10px 0; /* Adjust spacing between links */
+  }
+}
+
+  /* Link styling moved to components/links.css and components/navbar.css */
+  
+  /* Responsive adjustments for navigation moved to components/navbar.css */
+  
+  
+  /* Navigation Bar styles moved to components/navbar.css */
+  
+  
+  .middle-container2 {
+    width: 80%;
+    margin: 200px auto 200px auto;
+    text-align: left;
+  }
+  
+  /* Image styles moved to objects/images/images.css */
+  
+  
+  
+  
+  /* .container utility moved to utilities/layout.css */
+  
+  
+  /* Styles for smaller screens */
+  /* Mobile container styles moved to utilities/layout.css */
+  
+  
+  /* Clearfix has been moved to utilities/spacing.css as .u-clearfix */
+  
+  
+  
+  /* Typography and exclusive content styles moved to components/typography.css and objects/images/images.css */
+  
+  /* Styling voor de container div */
+  #pdf-container {
+    width: 100%;
+    height: 500px; /* Standaardhoogte voor desktop en grotere schermen */
+    position: relative;
+  }
+  
+  /* Styling voor de embedded PDF in een iframe */
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none; /* Verwijdert de standaardrand rond iframes */
+  }
+  
+  /* Mobile styles for PDF container moved to layout.css */
+  
+  
+  /* Spacing classes have been moved to utilities/spacing.css as OOCSS utilities:
+   .u-spacing, .u-spacing-md, etc. */
+  
+  /* Media query for wide screens */
+  @media screen and (min-width: 1600px) {
+    .container-fluid {
+      padding: 60px;
+      margin-top: 60px;
+      text-align: center;
+    }
+  }
+  
+  
+  /* Buttons */
+
+  
+  /* Button styling moved to components/buttons.css */
+  
+  
+  
+  /* .buy-spacing utility moved to utilities/layout.css */
+  
+  
+  @media screen and (min-device-width: 768px) and (min-device-height: 200px) and (max-device-width: 2560px) and (max-device-height: 1600px) {
+  
+  
+  
+  
+    /* Heading */
+  
+    /* Header and middle-container styles moved to components/typography.css */
+  
+    /* h1 styles moved to components/typography.css */
+  
+    /* p styles moved to components/typography.css */
+  
+  
+  
+  
+  
+    /* h2 styles moved to components/typography.css */
+  
+    /* p styles moved to components/typography.css */
+  
+  
+    /* Image styles moved to objects/images/standardized-images.css */
+    
+    /* .exlusive-text styles moved to components/typography.css */
+  
+    /* Footer */
+  
+    .container-fluid {
+      max-width: 100%;
+      /* background: -webkit-linear-gradient(bottom right, #D7C0AE, #EEE3CB);
+      background: -moz-linear-gradient(top, #D7C0AE, #EEE3CB);
+      background: -ms-linear-gradient(top, #D7C0AE, #EEE3CB);
+      background: -o-linear-gradient(top, #D7C0AE, #EEE3CB);
+      background: linear-gradient(to top, #D7C0AE, #EEE3CB);
+      background: radial-gradient(circle at center, #ADD8E6, white); */
+    }
+  
+    /* Spacing classes moved to utilities/spacing.css */
+  
+  
+    /* Footer styles moved to components/footer.css */
+  
+  
+  
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 480px) {
+  
+  
+  
+  
+    /* Navigation styles moved to components/navbar.css */
+  
+    /* Heading */
+  
+    /* Mobile header and container styles moved to components/typography.css */
+  
+    /* NavBar */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Images */
+  
+    /* .logo {
+      border-radius: 1.5rem;
+      height: 80px;
+      width: 80px;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      margin-bottom: 20px;
+      float: right;
+    } */
+  
+    /* Image styles moved to objects/images/standardized-images.css */
+    
+    /* .exlusive-text styles moved to components/typography.css */
+  
+  
+    /* Spacing utility classes moved to utilities/spacing.css */
+  
+    /* Mobile social button styling moved to components/buttons.css */
+  
+  
+      /* Footer-specific styles moved to components/footer.css and components/buttons.css */
+  
+  
+    }
+  

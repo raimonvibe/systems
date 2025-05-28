@@ -1,0 +1,79 @@
+/* Alignment utility classes */
+
+/* Text alignment utilities */
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+/* Legacy compatibility */
+.left-align {
+  text-align: left;
+}
+
+/* Flexbox alignment utilities */
+.u-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.u-flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.u-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.u-flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Vertical alignment utilities */
+.u-align-top {
+  vertical-align: top;
+}
+
+.u-align-middle {
+  vertical-align: middle;
+}
+
+.u-align-bottom {
+  vertical-align: bottom;
+}
+
+/* Float utilities */
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+/* Clearfix utility */
+.u-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

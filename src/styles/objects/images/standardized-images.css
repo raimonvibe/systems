@@ -1,0 +1,232 @@
+/* Standardized image sizes and responsive behavior */
+
+/* Base image styles for all image types */
+.o-image-standard {
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 400px;
+  aspect-ratio: 5/4; /* Landscape ratio */
+  order: 1; /* Images appear first in flex layout */
+  transition: transform 0.3s ease;
+}
+
+/* Variants for left/right positioning */
+.o-image-left {
+  composes: o-image-standard;
+  float: left;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.o-image-right {
+  composes: o-image-standard;
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+/* Certificate image standardization */
+.o-certificate-left, .o-certificate-right {
+  composes: o-image-standard;
+  z-index: 1;
+}
+
+.o-certificate-left {
+  float: left;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.o-certificate-right {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+/* Model image standardization */
+.o-model-left, .o-model-right {
+  composes: o-image-standard;
+  z-index: 1;
+}
+
+.o-model-left {
+  float: left;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.o-model-right {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+/* Profile image standardization */
+.c-profile-image {
+  composes: o-image-standard;
+  width: 450px;
+  height: 350px;
+}
+
+/* Legacy image classes for backward compatibility */
+.common-properties {
+  composes: o-image-standard;
+  height: 250px;
+  width: 350px;
+}
+
+.common-properties-left {
+  composes: o-image-standard;
+  float: left;
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 150px;
+  z-index: 1;
+}
+
+.common-properties-right {
+  composes: o-image-standard;
+  float: right;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 150px;
+}
+
+.common-properties-left2 {
+  composes: o-image-standard;
+  float: left;
+  height: 400px;
+  width: 350px;
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 150px;
+}
+
+.common-properties2 {
+  composes: o-image-standard;
+  height: 400px;
+  width: 350px;
+}
+
+/* Legacy certificate classes */
+.certificate-right {
+  composes: o-certificate-right;
+}
+
+.certificate-left {
+  composes: o-certificate-left;
+}
+
+/* Legacy model classes */
+.model-right {
+  composes: o-model-right;
+}
+
+.model-left {
+  composes: o-model-left;
+}
+
+/* Exclusive content images */
+.exlusive-explained {
+  position: relative;
+  top: 10px;
+  margin-right: 20px;
+  height: 40px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.exlusive {
+  position: relative;
+  top: 10px;
+  height: 35px;
+  width: 60px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .o-image-standard,
+  .o-image-left, .o-image-right,
+  .o-certificate-left, .o-certificate-right,
+  .o-model-left, .o-model-right,
+  .common-properties, .common-properties-left, .common-properties-right,
+  .common-properties-left2, .common-properties2 {
+    width: 450px;
+    height: 350px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .c-profile-image {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .o-image-standard,
+  .o-image-left, .o-image-right,
+  .o-certificate-left, .o-certificate-right,
+  .o-model-left, .o-model-right,
+  .common-properties, .common-properties-left, .common-properties-right,
+  .common-properties-left2, .common-properties2 {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .certificate-right, .certificate-left,
+  .model-right, .model-left {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .c-profile-image {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1367px) {
+  .o-image-standard,
+  .o-image-left, .o-image-right,
+  .o-certificate-left, .o-certificate-right,
+  .o-model-left, .o-model-right {
+    width: 550px;
+    height: 440px;
+  }
+  
+  .c-profile-image {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .o-image-standard,
+  .o-image-left, .o-image-right,
+  .o-certificate-left, .o-certificate-right,
+  .o-model-left, .o-model-right {
+    width: 600px;
+    height: 480px;
+  }
+  
+  .c-profile-image {
+    width: 550px;
+    height: 440px;
+  }
+}

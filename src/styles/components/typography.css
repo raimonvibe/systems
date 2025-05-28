@@ -1,0 +1,244 @@
+/* Typography component styles */
+.c-article {
+  margin-bottom: var(--spacing-md);
+}
+
+.c-article h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.c-article p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+/* Hover effect for article content */
+.o-header:hover .c-article h1,
+.o-middle-container:hover .c-article h1 {
+  color: var(--color-primary-lighter);
+  transition: color 0.3s ease;
+}
+
+/* Base typography from globals.css */
+p {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-size: 2em;
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Text alignment utilities */
+.left-align {
+  text-align: left;
+}
+
+/* Link styling */
+a {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-secondary) !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover, a:focus {
+  color: var(--color-primary) !important;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Special text styles */
+.exlusive-text {
+  display: inline-block;
+}
+
+/* Improved text layout for iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .c-article {
+    padding-left: 0;
+    max-width: 70%;
+  }
+  
+  .o-header .c-article,
+  .o-middle-container .c-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .c-article h1 {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+  }
+  
+  .c-article p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+  }
+}
+
+/* Improved text layout for large screens */
+@media (min-width: 1367px) {
+  .c-article {
+    padding-left: 0;
+    max-width: 60%;
+  }
+  
+  .o-header .c-article,
+  .o-middle-container .c-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .c-article h1 {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+  }
+  
+  .c-article p {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+  }
+}
+
+/* Media queries for responsive typography */
+@media (max-width: 768px) {
+  .c-article h1 {
+    font-size: 2rem;
+  }
+  
+  .c-article p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .c-article h1 {
+    font-size: 1.75rem;
+  }
+  
+  .c-article p {
+    font-size: 0.95rem;
+  }
+  
+  /* Mobile header and container styles */
+  .header {
+    max-width: 100%;
+    margin: 10px;
+  }
+  
+  .header2 {
+    max-width: 100%;
+    margin: 10px;
+  }
+  
+  .middle-container {
+    max-width: 100%;
+    margin: 10px;
+  }
+  
+  .middle-container2 {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Tablet and mobile typography */
+@media screen and (min-device-width: 768px) and (min-device-height: 200px) and (max-device-width: 2560px) and (max-device-height: 1600px) {
+  h1 {
+    font-family: var(--font-heading);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  p {
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Header and container styles for tablets and desktops */
+  .header {
+    width: 95%;
+    margin: 200px auto;
+    text-align: left;
+  }
+  
+  .middle-container {
+    width: 95%;
+    margin: 200px auto;
+    text-align: left;
+    clear: both;
+  }
+}
+
+/* Shop link styles */
+.shop-link {
+  color: #2F3F57 !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.shop-link:hover {
+  color: #2F3F57 !important;
+}
+
+.shop-link .arrow {
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 40px;
+}
+
+/* Custom link styles */
+.middle-container p a.custom-link {
+  color: #2F3F57 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

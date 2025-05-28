@@ -1,0 +1,78 @@
+/* Image layout styles to position images above text on all screen sizes */
+
+/* Base styles for container elements */
+.o-middle-container, .o-header, .o-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Clear the float behavior */
+.o-middle-container::after {
+  content: none;
+}
+
+/* Image positioning for all screen sizes */
+.o-image-left, .o-image-right,
+.o-model-left, .o-model-right,
+.o-certificate-left, .o-certificate-right {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 90%;
+  display: block;
+  margin-bottom: 30px;
+  order: 1; /* Images appear first */
+  text-align: center;
+}
+
+/* Article positioning for all screen sizes */
+article, .c-article {
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 15px;
+  order: 2; /* Articles appear after images */
+}
+
+/* Maintain responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .o-middle-container, .o-header, .o-container {
+    padding: 20px 0;
+  }
+  
+  .o-image-left, .o-image-right,
+  .o-model-left, .o-model-right,
+  .o-certificate-left, .o-certificate-right {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .o-model-left, .o-model-right, 
+  .o-certificate-left, .o-certificate-right {
+    height: 250px;
+    width: 350px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1367px) {
+  .o-middle-container, .o-header, .o-container {
+    width: 75%;
+  }
+  
+  article, .c-article {
+    width: 80%;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .o-middle-container, .o-header, .o-container {
+    width: 70%;
+  }
+}

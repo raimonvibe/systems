@@ -1,0 +1,327 @@
+/* Layout objects */
+.o-container {
+  width: 80%;
+  margin: var(--spacing-lg) auto;
+  text-align: left;
+}
+
+.o-container--fluid {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  text-align: center;
+  background: var(--gradient-primary);
+  background-size: 400% 400%;
+  animation: GradientAnimation 20s ease infinite;
+  color: var(--color-primary);
+  min-height: auto;
+}
+
+/* Legacy container classes for compatibility */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  text-align: center;
+  background: var(--gradient-primary);
+  background-size: 400% 400%;
+  animation: GradientAnimation 20s ease infinite;
+  color: var(--color-primary);
+  min-height: auto;
+}
+
+/* PDF container styles */
+.o-pdf-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.o-pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Legacy PDF container for compatibility */
+#pdf-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile responsive styles for PDF containers */
+@media (max-width: 768px) {
+  /* Fix for a tag wrapping the PDF container */
+  a[href$=".pdf"] {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .o-pdf-container,
+  #pdf-container {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  a[href$=".pdf"] {
+    width: 100%;
+  }
+  
+  .o-pdf-container,
+  #pdf-container {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+}
+
+/* Header layout */
+.o-header {
+  clear: both;
+  width: 80%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.o-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Middle container layout */
+.o-middle-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.o-middle-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Common image properties */
+.o-image-left {
+  /* float: left; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-right: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.o-image-right {
+  /* float: right; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-left: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Video container */
+.o-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.o-video-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  width: 80%;
+  height: 0;
+}
+
+.o-video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Model image styles */
+.o-model-left {
+  /* float: left; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-right: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.o-model-right {
+  /* float: right; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-left: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Certificate image styles */
+.o-certificate-left {
+  /* float: left; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-right: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.o-certificate-right {
+  /* float: right; */ /* Removed to prevent conflicts with flex layout */
+  /* margin-left: 30px; */ /* Removed to ensure consistent centering */
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Media queries for responsive images */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* iPad Pro optimizations */
+  .o-header, .o-middle-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .o-image-left, .o-image-right,
+  .o-model-left, .o-model-right,
+  .o-certificate-left, .o-certificate-right {
+    max-width: 500px;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .common-properties-left, .common-properties-right {
+    margin: 0 auto var(--spacing-md) auto;
+    max-width: 500px;
+  }
+  
+  .c-article {
+    width: 100%;
+    max-width: 90% !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Apply to all image classes across the site - both OOCSS and legacy classes */
+  .o-model-left, .o-model-right, .o-certificate-left, .o-certificate-right, 
+  .o-image-left, .o-image-right,
+  [class*="o-image-"], [class*="o-model-"], [class*="o-certificate-"],
+  .common-properties-left, .common-properties-right, .common-properties {
+    max-width: 90%;
+    float: none;
+    margin: 0 auto 30px;
+    display: block;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    order: 1; /* Images appear first */
+  }
+  
+  /* Apply to all container elements including legacy classes */
+  .o-middle-container, .o-header, .o-container, 
+  .header, .middle-container,
+  main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  /* Apply to all article elements */
+  article, .c-article {
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px;
+    order: 2; /* Ensure articles appear after images */
+  }
+  
+  /* Consistent heading and paragraph styling */
+  .c-article h1, article h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .c-article p, article p {
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .c-btn, article a.c-btn, .u-align {
+    display: inline-block;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .o-model-left, .o-model-right, .o-certificate-left, .o-certificate-right {
+    height: 250px;
+    width: 350px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

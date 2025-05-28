@@ -1,0 +1,21 @@
+/* Profile components */
+.c-profile-image {
+  float: left;
+  margin-right: 30px;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Changed to cover to fill container properly */
+  max-width: 100%;
+  height: 300px; /* Adjusted height to match image's portrait orientation */
+  width: 250px; /* Adjusted width to match image's portrait orientation */
+  margin-bottom: 20px;
+}
+
+/* Media queries for responsive profile image */
+@media (max-width: 768px) {
+  .c-profile-image {
+    float: none;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}

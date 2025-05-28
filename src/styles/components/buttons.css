@@ -1,0 +1,115 @@
+/* Button components */
+.c-btn {
+  font-family: var(--font-body);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.c-btn--primary {
+  background: var(--color-primary);
+  background-image: var(--gradient-primary);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-accent);
+}
+
+.c-btn--primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(47, 63, 87, 0.75);
+}
+
+/* Social button styling */
+/* 
+// Commented out - replaced with c-social-icon for original design
+.c-btn--social {
+  background: var(--color-primary);
+  background-image: var(--gradient-primary);
+  color: var(--color-secondary);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  text-decoration: none;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.c-btn--social:hover,
+.c-btn--social:focus {
+  background: var(--color-primary);
+  background-image: var(--gradient-primary);
+  color: var(--color-secondary);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(47, 63, 87, 0.75);
+}
+*/
+
+/* Social icon without box container */
+.c-social-icon {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.c-social-icon:hover,
+.c-social-icon:focus {
+  color: var(--color-primary-lightest);
+  transform: scale(1.1);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Back to Top button */
+.c-btn--back-to-top {
+  background: var(--color-primary);
+  background-image: var(--gradient-primary);
+  color: var(--color-secondary);
+  font-family: var(--font-body);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  display: none; /* Initially hidden, shown via JavaScript */
+  transition: all 0.4s ease-in-out;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.c-btn--back-to-top:hover,
+.c-btn--back-to-top:focus {
+  background: var(--color-primary);
+  background-image: var(--gradient-primary);
+  text-decoration: none;
+  font-weight: bold;
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-color: var(--color-primary);
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 15px 0 rgba(47, 63, 87, 0.75);
+}
