@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+'use client';
+
+import React, { useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -14,13 +15,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer: React.FC = () => {
-  const router = useRouter();
-
   useEffect(() => {
-    // Initialize button element for 'scroll to top' functionality
     const mybutton = document.getElementById("myBtn");
 
-    // Function to show the button when user scrolls down 20px from the top of the document
     const scrollFunction = () => {
       if (mybutton) {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -31,24 +28,18 @@ const Footer: React.FC = () => {
       }
     };
 
-    // Function to scroll to the top of the document when the user clicks the button
     const topFunction = () => {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     };
 
-    // Add event listener for scroll
     window.addEventListener("scroll", scrollFunction);
 
-    // Ensure the button has the correct text color
     if (mybutton) {
-      mybutton.style.color = "#F8F1F1"; // Tekstkleur
-
-      // Add event listener for the button
+      mybutton.style.color = "#F8F1F1";
       mybutton.addEventListener("click", topFunction);
     }
 
-    // Cleanup function
     return () => {
       window.removeEventListener("scroll", scrollFunction);
       if (mybutton) {
@@ -57,117 +48,66 @@ const Footer: React.FC = () => {
     };
   }, []);
 
+  const socialLinks = [
+    { href: "https://x.com/raimonvibe/", icon: faXTwitter, label: "Link to Twitter" },
+    { href: "https://www.youtube.com/channel/UCDGDNuYb2b2Ets9CYCNVbuA/videos/", icon: faYoutube, label: "Link to YouTube", className: "footer-link2" },
+    { href: "https://www.tiktok.com/@raimonvibe/", icon: faTiktok, label: "Link to TikTok" },
+    { href: "https://www.instagram.com/raimonvibe/", icon: faInstagram, label: "Link to Instagram" },
+    { href: "https://medium.com/@raimonvibe/", icon: faMedium, label: "Link to Medium" },
+    { href: "https://github.com/raimonvibe/", icon: faGithub, label: "Link to GitHub", className: "footer-link3" },
+    { href: "https://www.linkedin.com/in/raimonvibe/", icon: faLinkedin, label: "Link to LinkedIn", className: "footer-link3" },
+    { href: "https://www.facebook.com/profile.php?id=61563450007849", icon: faFacebook, label: "Link to Facebook", className: "footer-link3" },
+  ];
+
   return (
-    <div>
-      <footer className="container-fluid">
-        <div className="spacing4"></div>
-        <a
-          className="footer-link"
-          href="https://x.com/raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to Twitter"
-        >
-          <FontAwesomeIcon icon={faXTwitter} size="1x" />
-        </a>
-        <a
-          className="footer-link footer-link2"
-          href="https://www.youtube.com/channel/UCDGDNuYb2b2Ets9CYCNVbuA/videos/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to YouTube"
-        >
-          <FontAwesomeIcon icon={faYoutube} size="1x" />
-        </a>
-        <div className="spacing4"></div>
-        <a
-          className="footer-link"
-          href="https://www.tiktok.com/@raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to TikTok"
-        >
-          <FontAwesomeIcon icon={faTiktok} size="1x" />
-        </a>
-        <a
-          className="footer-link"
-          href="https://www.instagram.com/raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to Instagram"
-        >
-          <FontAwesomeIcon icon={faInstagram} size="1x" />
-        </a>
-        <div className="spacing4"></div>
-        <a
-          className="footer-link"
-          href="https://medium.com/@raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to Medium"
-        >
-          <FontAwesomeIcon icon={faMedium} size="1x" />
-        </a>
-        <a
-          className="footer-link footer-link3"
-          href="https://github.com/raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to GitHub"
-        >
-          <FontAwesomeIcon icon={faGithub} size="1x" />
-        </a>
-        <div className="spacing4"></div>
-        <a
-          className="footer-link footer-link3"
-          href="https://www.linkedin.com/in/raimonvibe/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to LinkedIn"
-        >
-          <FontAwesomeIcon icon={faLinkedin} size="1x" />
-        </a>
-        <a
-          className="footer-link"
-          href="https://www.facebook.com/profile.php?id=61563450007849"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to Facebook"
-        >
-          <FontAwesomeIcon icon={faFacebook} size="1x" />
-        </a>
-        <div className="spacing4"></div>
+    <footer className="o-container--fluid">
+      <div className="c-footer-icons">
+        {socialLinks.map((link, index) => (
+          <React.Fragment key={link.href}>
+            {index % 2 === 0 && index !== 0 && <div className="spacing4" />}
+            <Link
+              href={link.href}
+              className={`c-social-icon ${link.className ? link.className.replace('footer-link', 'c-footer-link') : ''}`}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={link.label}
+            >
+              <FontAwesomeIcon icon={link.icon} size="1x" />
+            </Link>
+          </React.Fragment>
+        ))}
+      </div>
+      <div className="spacing4" />
+      <Link
+        href="/PrivacyNotice"
+        className="c-footer-link c-footer-link--offset-right"
+        aria-label="Link to Privacy Policy"
+      >
+        Privacy Notice
+      </Link>
+      <div className="spacing4" />
+      <Link
+        href="/LegalNotice"
+        className="c-footer-link c-footer-link--offset-left"
+        aria-label="Link to Legal Notice"
+      >
+        Legal Notice
+      </Link>
+      <p className="c-copyright">
         <Link
-          className="footer-link footer-link2"
-          href="/PrivacyNotice"
-          aria-label="Link to Privacy Policy"
+          href="https://www.raimonvibe.com/"
+          className="c-footer-link"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link to Raimonvibe Homepage"
         >
-          Privacy Notice
+          © {new Date().getFullYear()} raimonvibe
         </Link>
-        <div className="spacing4"></div>
-        <Link
-          className="footer-link footer-link2"
-          href="/LegalNotice"
-          aria-label="Link to Legal Notice"
-        >
-          Legal Notice
-        </Link>
-        <p className="footer-link">
-          <a
-            className="footer-link"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.raimonvibe.com/"
-            aria-label="Link to Raimonvibe Homepage"
-          >
-            © {new Date().getFullYear()} raimonvibe
-          </a>
-        </p>
-        <button id="myBtn" title="Go to top">
-          Back to Top
-        </button>
-      </footer>
-    </div>
+      </p>
+      <button id="myBtn" className="c-btn c-btn--back-to-top" title="Go to top" aria-label="Scroll back to top of page">
+        Back to Top
+      </button>
+    </footer>
   );
 };
 
