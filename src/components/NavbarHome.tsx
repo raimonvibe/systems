@@ -15,21 +15,23 @@ interface NavLink {
 const NavbarHome: React.FC = () => {
   const navLinks: NavLink[] = [
     { href: "/", label: "Home" },
-    { href: "/Services", label: "Services" },
-    { href: "/Opportunities", label: "Opportunities" },
-    { href: "/About", label: "About Me" },
-    { href: "/Clients", label: "Clients" },
-    { href: "/ThreeDLibrary", label: "ThreeDLibrary" },
-    { href: "/Certificates", label: "Certificates" },
-    { href: "/resume", label: "My Resume", target: "_blank" },
-    { href: "/Contact", label: "Contact" },
+    // { href: "https://raimonvibe.pythonanywhere.com/", label: "BookHub", target: "_blank" },
+    { href: "https://skills-hub.raimonvibe.com/", label: "SkillsHub", target: "_blank" },
+    { href: "https://code-review.raimonvibe.com/", label: "Code Review", target: "_blank" },
+    { href: "https://www.physics-calculator.raimonvibe.com/", label: "Velocity Calculator", target: "_blank" },
+    { href: "https://www.physics-flashcards.raimonvibe.com/", label: "Physics Flascards", target: "_blank" }, 
+    { href: "https://retro-monitor.raimonvibe.com/", label: "Retro Monitor", target: "_blank" }, 
+    { href: "https://animalguesses.raimonvibe.com/", label: "Animal Guesses", target: "_blank" }, 
+    { href: "https://www.emf-simulator.raimonvibe.com/", label: "EMF-Simulator", target: "_blank" },
+    { href: "https://tetris2.0.raimonvibe.com/", label: "Tetris 2.0", target: "_blank" }, 
+    { href: "https://periodic-table.raimonvibe.com/", label: "Periodic Table", target: "_blank" }, 
   ];
 
   return (
-    <nav className="o-container">
+    <nav className="navbar">
       <Link href="/" aria-label="Home">
         <Image
-          className="o-logo"
+          className="logo"
           src={cover}
           alt="Logo of my company"
           width={80}
@@ -44,3 +46,5 @@ const NavbarHome: React.FC = () => {
 };
 
 export default NavbarHome;
+
+
