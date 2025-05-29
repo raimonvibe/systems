@@ -36,6 +36,7 @@ article, .c-article {
   margin-top: 10px;
   padding: 0 15px;
   order: 2; /* Articles appear after images */
+  font-size: 1.3rem;
 }
 
 /* Maintain responsive adjustments for smaller screens */
@@ -68,6 +69,7 @@ article, .c-article {
   article, .c-article {
     width: 80%;
     padding: 0 20px;
+    font-size: 1.4rem;
   }
 }
 
