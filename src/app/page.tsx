@@ -214,7 +214,7 @@ export default function Home() {
 
         <div className="o-container-standard">
           <Image
-            className="o-image-standard o-image-right"
+            className="o-image-standard o-image-left"
             src={InventoryPro}
             alt="A sleek interface showcasing inventory tracking with charts, item lists, and analytics in a clean workspace environment."
           />
