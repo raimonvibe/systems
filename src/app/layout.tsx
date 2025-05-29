@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import NavbarHome from "../components/NavbarHome";
 import Footer from "../components/Footer";
-import '../styles/globals.css';
+import '../styles/main.css';
 
 export const metadata: Metadata = {
   title: 'Home raimonvibe',
