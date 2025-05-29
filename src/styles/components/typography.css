@@ -13,7 +13,7 @@
 
 .c-article p {
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: var(--spacing-sm);
   color: var(--color-text);
@@ -87,7 +87,7 @@ a:hover, a:focus {
 /* Paragraph component */
 .c-paragraph {
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
@@ -116,6 +116,7 @@ a:hover, a:focus {
   .c-article p, .c-paragraph {
     margin-bottom: var(--spacing-sm);
     line-height: 1.7;
+    font-size: 1.4rem;
   }
 }
 
@@ -142,6 +143,7 @@ a:hover, a:focus {
   .c-article p, .c-paragraph {
     margin-bottom: var(--spacing-sm);
     line-height: 1.7;
+    font-size: 1.4rem;
   }
 }
 
@@ -152,7 +154,7 @@ a:hover, a:focus {
   }
   
   .c-article p, .c-paragraph {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -162,7 +164,7 @@ a:hover, a:focus {
   }
   
   .c-article p, .c-paragraph {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   
   /* Mobile header and container styles */
@@ -200,7 +202,7 @@ a:hover, a:focus {
   p, .c-paragraph {
     font-family: var(--font-body);
     color: var(--color-text-primary);
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
