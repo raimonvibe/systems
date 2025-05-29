@@ -10,6 +10,7 @@ import animal from "/public/images/animal.webp";
 import emf from "/public/images/emf.webp";
 import tetris from "/public/images/tetris.webp";
 import periodic from "/public/images/periodic.webp";
+import InventoryPro from "/public/images/InventoryPro.webp";
 
 
 export default function Home() {
@@ -212,20 +213,22 @@ export default function Home() {
       </div>
 
         <div className="o-container-standard">
-        <Image
-          className="o-image-standard o-image-left"
-          src={periodic}
-          alt="An interactive periodic table displayed in warm, minimal tones. Elements are color-coded and neatly arranged, exuding a sense of calm structure and scientific beauty."
-        />
-        <article>
-          <div>
-            <h1>The Periodic Table</h1>
-            <p className="c-paragraph">
-              Not just rows and columns — it's a silent map of everything. Every element has a story: iron in our blood, carbon in our breath, gold in our dreams. This project gives form to that wonder. You click, you learn, and slowly you start to see the order in the chaos. It's about connection. And how everything — even us — fits into it.
-            </p>
-          </div>
-        </article>
-      </div>
+          <Image
+            className="o-image-standard o-image-right"
+            src={InventoryPro}
+            alt="A sleek interface showcasing inventory tracking with charts, item lists, and analytics in a clean workspace environment."
+          />
+          <article>
+            <div>
+              <h1>Inventory Pro</h1>
+              <p className="c-paragraph">
+                Inventory Pro is a modern inventory management system designed to streamline stock tracking, supplier coordination, and transaction logging. 
+                Built with a powerful tech stack and an intuitive interface, it empowers teams to manage their resources efficiently and make data-driven decisions.
+              </p>
+            </div>
+          </article>
+        </div>
+
 
 
 
