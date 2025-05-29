@@ -1,26 +1,22 @@
 /* Typography component styles */
 .c-article {
   margin-bottom: var(--spacing-md);
-  text-align: center;
-  width: 100%;
 }
 
 .c-article h1 {
   font-family: var(--font-heading);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin-bottom: var(--spacing-sm);
   color: var(--color-primary);
   line-height: 1.2;
-  text-align: center;
 }
 
 .c-article p {
   font-family: var(--font-body);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0;
+  margin-bottom: var(--spacing-sm);
   color: var(--color-text);
-  text-align: center;
 }
 
 /* Hover effect for article content */
@@ -91,39 +87,35 @@ a:hover, a:focus {
 /* Paragraph component */
 .c-paragraph {
   font-family: var(--font-body);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0;
+  margin-bottom: var(--spacing-sm);
   color: var(--color-text-primary);
-  text-align: center;
 }
 
 /* Improved text layout for iPad Pro */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .c-article {
     padding-left: 0;
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 70%;
   }
   
   .o-header .c-article,
   .o-middle-container .c-article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   
   .c-article h1 {
     margin-bottom: var(--spacing-sm);
     line-height: 1.3;
-    font-size: 2.6rem;
   }
   
   .c-article p, .c-paragraph {
-    margin: 0;
+    margin-bottom: var(--spacing-sm);
     line-height: 1.7;
-    font-size: 1.25rem;
   }
 }
 
@@ -131,55 +123,46 @@ a:hover, a:focus {
 @media (min-width: 1367px) {
   .c-article {
     padding-left: 0;
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 60%;
   }
   
   .o-header .c-article,
   .o-middle-container .c-article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   
   .c-article h1 {
     margin-bottom: var(--spacing-sm);
     line-height: 1.3;
-    font-size: 3rem;
   }
   
   .c-article p, .c-paragraph {
-    margin: 0;
+    margin-bottom: var(--spacing-sm);
     line-height: 1.7;
-    font-size: 1.4rem;
   }
 }
 
 /* Media queries for responsive typography */
 @media (max-width: 768px) {
   .c-article h1 {
-    font-size: 2.4rem;
-    text-align: center;
+    font-size: 2rem;
   }
   
   .c-article p, .c-paragraph {
-    font-size: 1.2rem;
-    margin: 0;
-    text-align: center;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .c-article h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.75rem;
   }
   
   .c-article p, .c-paragraph {
-    font-size: 1.1rem;
-    margin: 0;
-    text-align: center;
+    font-size: 0.95rem;
   }
   
   /* Mobile header and container styles */

@@ -31,12 +31,11 @@
 
 /* Article positioning for all screen sizes */
 article, .c-article {
-  width: 90%;
+  max-width: 500px;
   text-align: center;
-  margin-top: 10px;
-  padding: 0 15px;
+  margin-top: 20px;
+  padding: 0;
   order: 2; /* Articles appear after images */
-  font-size: 1.3rem;
 }
 
 /* Maintain responsive adjustments for smaller screens */
@@ -69,7 +68,6 @@ article, .c-article {
   article, .c-article {
     width: 80%;
     padding: 0 20px;
-    font-size: 1.4rem;
   }
 }
 
