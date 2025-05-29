@@ -211,11 +211,27 @@ export default function Home() {
         </article>
       </div>
 
+        <div className="o-container-standard">
+        <Image
+          className="o-image-standard o-image-left"
+          src={periodic}
+          alt="An interactive periodic table displayed in warm, minimal tones. Elements are color-coded and neatly arranged, exuding a sense of calm structure and scientific beauty."
+        />
+        <article>
+          <div>
+            <h1>The Periodic Table</h1>
+            <p className="c-paragraph">
+              Not just rows and columns — it's a silent map of everything. Every element has a story: iron in our blood, carbon in our breath, gold in our dreams. This project gives form to that wonder. You click, you learn, and slowly you start to see the order in the chaos. It's about connection. And how everything — even us — fits into it.
+            </p>
+          </div>
+        </article>
+      </div>
+
 
 
         <div className="o-container-standard">
           <Image
-            className="o-image-standard o-image-left"
+            className="o-image-standard o-image-right"
             src={welcome}
             alt="A serene and minimalist workspace featuring a desk with a computer displaying abstract designs, surrounded by neutral-toned decor, bookshelves, and warm lighting for a calming ambiance."
           /> 
