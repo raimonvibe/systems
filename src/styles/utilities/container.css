@@ -1,5 +1,15 @@
 /* Container utility classes */
 
+/* Standard container with vertical flexbox layout */
+.o-container-standard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
 /* Container fluid utility */
 .u-container-fluid {
   max-width: 100%;
